@@ -1,0 +1,19 @@
+{
+  "name": "jenkins-pipelines",
+  "version": "1.0.0",
+  "description": ":DD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaa97181/Jenkins-Pipelines.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oaa97181/Jenkins-Pipelines/issues"
+  },
+  "homepage": "https://github.com/oaa97181/Jenkins-Pipelines#readme"
+}

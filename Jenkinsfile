@@ -1,7 +1,7 @@
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent {
-        label 'MacOS OAA'
+        label '!windows'
     }
 
     environment {

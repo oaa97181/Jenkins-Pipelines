@@ -1,13 +1,20 @@
+// Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
+    agent {
+        label 'MacOS OAA'
+    }
+
+    environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
+    }
+
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World 2 :D"'
-                sh '''
-                    echo "Multiline shell steps works too :D"
-                    ls -lah
-                '''
+                echo "Database engine is ${DB_ENGINE}"
+                echo "DISABLE_AUTH is ${DISABLE_AUTH}"
+                sh 'printenv'
             }
         }
     }
